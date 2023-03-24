@@ -1,0 +1,21 @@
+.contenido{
+    display: flex;
+    flex-flow: column;
+}
+.inputmail{
+    width: 50%;
+    align-self: center;
+    margin-top: 1rem !important;
+    margin-bottom: 0.8rem;
+}
+.contenido>h3 {
+    margin-bottom: 2rem;
+}
+
+.contenido>h5{
+    margin-bottom: 2rem;
+}
+
+.miBoton{
+    margin-top: 1rem !important;
+} 

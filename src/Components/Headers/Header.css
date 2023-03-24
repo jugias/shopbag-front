@@ -1,0 +1,56 @@
+.registrarse:hover {
+  background-color: black;
+}
+.toggle{
+  display: flex;
+  flex-direction: row;
+}
+.registrarse{
+  margin-right: 0.8rem;
+}
+.col-6{
+  width: fit-content;
+}
+.header{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #5534A5;
+}
+.enlaces{
+  width: fit-content;
+
+  display: flex;
+  justify-content: flex-end !important;
+}
+.shoppingKart{
+  width: fit-content;
+}
+.searchBarjsx{
+  width: 33.3%;
+}
+.titulo{
+  text-decoration: none;
+  
+  text-decoration: #5534A5;
+  text-decoration-thickness:unset;
+}
+.titulo:link{
+  text-decoration: none;
+}
+.titulo:visited{
+  text-decoration: none;
+}
+.titulo:hover{
+  text-decoration: none;
+}
+.titulo:active{
+  text-decoration: none;
+}
+.p{
+  font-weight: 550;
+  text-decoration: none;
+  font-size: larger;
+
+}

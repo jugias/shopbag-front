@@ -1,0 +1,27 @@
+.productsByUSer__container{
+    width: 100%;
+    display: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.productsByUSer__cardContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.productsByUSer__noProducts p{
+    margin: 0;
+}
+.productsByUSer__noProducts{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: darkgray;
+}

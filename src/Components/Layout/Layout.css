@@ -1,0 +1,5 @@
+.grid__adminLayaout{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    background-color: white;
+}

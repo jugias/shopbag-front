@@ -1,0 +1,113 @@
+.card-title {
+  font-size: medium;
+  font-weight: bold;
+}
+.card {
+  padding: 10px;
+  border-radius: 15px;
+  width: 250px;
+  transition: all 0.3 ease;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card-title {
+  height: 40px;
+}
+.card-img-top {
+  height: 200px;
+}
+.modal__description {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.Mascosta {
+  background-color: blueviolet;
+}
+.Belleza {
+  background-color: pink;
+}
+.Deporte {
+  background-color: green;
+}
+.Electronica {
+  background-color: orange;
+}
+.badge{
+  width: 100%;
+  text-align: center;
+}
+.card__precio {
+  background-color: #a85cf9;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.reviewsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewsContainer .reviewsTitle {
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.reviewsContainer .reviewList {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 10rem;
+}
+
+.reviewsContainer .reviewContainer{
+  /* position: relative; */
+  height: auto;
+  border-bottom: 1px solid gray;
+}
+
+.reviewContainer .userReviewDetails {
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+.reviewContainer .reviewHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.buttonContainer button {
+  color: white;
+  margin: 0 0.2rem;
+  font-size: 1.5rem;
+}
+
+.buttonContainer button:first-child {
+  background-color: #2B1A53;
+}
+
+.buttonContainer button:last-child {
+  background-color: #A85CF9;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background: #F1F1F1;
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #A85CF9;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}

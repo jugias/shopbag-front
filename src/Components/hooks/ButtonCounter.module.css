@@ -1,0 +1,31 @@
+.wrapper{
+  height: 3m;
+  min-width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  margin-left: 5px;
+}
+.wrapper span{
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.inputNumber {
+  font-size: 1.2rem;
+  width: 2rem;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+  border: none;
+  user-select: auto;
+}

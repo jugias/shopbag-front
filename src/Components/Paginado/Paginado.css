@@ -1,0 +1,73 @@
+.navTotal{
+  height: fit-content;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.navTotal>ul{
+  display: flex;
+  justify-content: center;
+}
+.number{
+    /* CSS */
+    
+    appearance: button;
+    background-color: #5534a5;
+      background-position: 50% 50%;
+      border: solid transparent;
+      border-radius: 16px;
+      border-width: 0 0 4px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: din-round,sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .8px;
+      line-height: 20px;
+      margin: 0;
+      outline: none;
+      overflow: visible;
+      padding: 13px 16px;
+      text-align: center;
+      text-transform: uppercase;
+      touch-action: manipulation;
+      transform: translateZ(0);
+      transition: filter .2s;
+      user-select: none;
+      -webkit-user-select: none;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: fit-content;
+      margin-right: 10px;
+      /* border-radius: 10px 10px 10px 10px;border: 4px solid #ff6550; */
+    }
+    
+    .number:after {
+        background-clip: padding-box;
+        background-color: #a85cf9;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+      bottom: -4px;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+    }
+    
+    .number:main,
+    .number:focus {
+      user-select: auto;
+    }
+    
+    .number:hover:not(:disabled) {
+      filter: brightness(1.1);
+    }
+    
+    .number:disabled {
+      cursor: auto;
+    }

@@ -1,0 +1,26 @@
+.button-container>* {
+  margin: 5px 0;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.button-container>button {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+
+
+.linkRegister {
+  color: #1877f2;
+  text-align: end;
+  cursor: pointer;
+  justify-content: end;
+}
+
+.linkRegister:hover {
+  text-decoration: underline;
+
+}

@@ -1,0 +1,93 @@
+.userReviewList {
+  width: 30rem;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+  }
+
+  .userReviewContainer {
+
+    border-radius: 15px;
+
+    background-color: white;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CED4DA;
+
+    .reviewHeader {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .reviewBody {
+      display: flex;
+      justify-content: space-between;
+
+      .productDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+
+        img {
+          height: 100px;
+          width: 100px;
+          margin: 0;
+        }
+
+        span {
+          text-align: center;
+          font-weight: bold;
+          font-size: .7rem;
+        }
+      }
+
+      .inputContainer {
+        display: flex;
+        width: 75%;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 1rem;
+
+
+        .buttonsContainer {
+
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin-bottom: 5px;
+
+          .ratingContainer {
+            font-size: 1.2rem;
+          }
+
+          .btn {
+            background-color: #A85CF9;
+            color: white;
+            font-size: 1rem;
+          }
+
+
+        }
+
+
+
+
+        .form-floating {
+          margin-bottom: 1.3rem;
+
+          textarea {
+            height: 5rem;
+          }
+
+        }
+
+      }
+
+    }
+  }
+}
