@@ -14,7 +14,7 @@ let persistor = persistStore(store);
 
 dotenv.config();
 
-axios.defaults.baseURL = "https://shopbag-itsz.onrender.com";
+axios.defaults.baseURL = "https://shopbag-itsz.onrender.com/";
 
 ReactDOM.render(
   <Provider store={store}>
