@@ -63,13 +63,13 @@ import { getAllInvoices } from "../../../redux/reducer/AllInvoices";
 //     </div>
 //   );
 // =======
-import { io } from "socket.io-client";
+// import { io } from "socket.io-client";
 import { PieChar } from "../../components/Recharts/PieChar/PieChar";
 import { RadarChar } from "../../components/Recharts/RadarChar/RadarChar";
 import toast, { Toaster } from "react-hot-toast";
 
 const Home = () => {
-  const socket = io(process.env.REACT_APP_API || "ws://localhost:3001");
+  // const socket = io(process.env.REACT_APP_API || "ws://localhost:3001");
 
   const dispatch = useDispatch();
 
@@ -80,25 +80,25 @@ const Home = () => {
     dispatch(getAllInvoices());
   }, [dispatch]);
 
-  socket.on("newProduct", ({ name, image }) => {
-    toast((t) => (
-      <>
-        <div className="notificationBody">
-          <img alt={name} src={image[0]} />
-          <div className="notificationTitle">
-            <span>Nuevo Producto</span>
-            <p>{name}</p>
-          </div>
-        </div>
-        <button
-          className="btn notificationButton"
-          onClick={() => toast.dismiss(t.id)}
-        >
-          Cerrar
-        </button>
-      </>
-    ));
-  });
+  // socket.on("newProduct", ({ name, image }) => {
+  //   toast((t) => (
+  //     <>
+  //       <div className="notificationBody">
+  //         <img alt={name} src={image[0]} />
+  //         <div className="notificationTitle">
+  //           <span>Nuevo Producto</span>
+  //           <p>{name}</p>
+  //         </div>
+  //       </div>
+  //       <button
+  //         className="btn notificationButton"
+  //         onClick={() => toast.dismiss(t.id)}
+  //       >
+  //         Cerrar
+  //       </button>
+  //     </>
+  //   ));
+  // });
 
   const productNotifications = () => {};
 

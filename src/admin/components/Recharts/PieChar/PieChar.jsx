@@ -1,27 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import './PieChar.scss';
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts';
-import { sendNotification } from '../../../../utils/notifications';
+import React, { useState, useEffect } from "react";
+import "./PieChar.scss";
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from "recharts";
+import { sendNotification } from "../../../../utils/notifications";
 
 export const PieChar = ({ socket }) => {
   const [data, setData] = useState([
     {
-      name: 'Nan',
-      value: '0',
+      name: "Nan",
+      value: "0",
     },
   ]);
 
   useEffect(() => {
-    sendNotification('getPieChar').then(({ data }) => {
+    sendNotification("getPieChar").then(({ data }) => {
       setData(data.response);
     });
   }, []);
 
-  socket.on('getPieChar', data => {
-    setData(state => data);
-  });
+  // socket.on('getPieChar', data => {
+  //   setData(state => data);
+  // });
 
-  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+  const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
   const RADIAN = Math.PI / 180;
   const renderCustomizedLabel = ({
@@ -42,9 +42,9 @@ export const PieChar = ({ socket }) => {
       <text
         x={x}
         y={y}
-        fill='black'
-        textAnchor={x > cx ? 'start' : 'end'}
-        dominantBaseline='central'
+        fill="black"
+        textAnchor={x > cx ? "start" : "end"}
+        dominantBaseline="central"
       >
         {/* {`${(percent * 100).toFixed(0)}%`} */}
         {data[index].name} ({value})
@@ -54,19 +54,19 @@ export const PieChar = ({ socket }) => {
 
   return (
     <>
-      <div className='container_piechart'>
+      <div className="container_piechart">
         <h4>Catidad de productos vs categoria</h4>
         <ResponsiveContainer>
           <PieChart width={400} height={400}>
             <Pie
               data={data}
-              cx='50%'
-              cy='50%'
+              cx="50%"
+              cy="50%"
               // labelLine={false}
               label={renderCustomizedLabel}
               outerRadius={80}
-              fill='#8884d8'
-              dataKey='value'
+              fill="#8884d8"
+              dataKey="value"
             >
               {data.map((entry, index) => (
                 <Cell

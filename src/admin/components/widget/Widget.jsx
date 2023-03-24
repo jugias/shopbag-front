@@ -35,9 +35,9 @@ const Widget = ({ type, socket }) => {
         ),
       };
 
-      socket.on("usersQuantity", (data) => {
-        setMetric((state) => ({ ...state, amount: data }));
-      });
+      // socket.on("usersQuantity", (data) => {
+      //   setMetric((state) => ({ ...state, amount: data }));
+      // });
 
       break;
     case "ordersQuantity":
@@ -58,9 +58,9 @@ const Widget = ({ type, socket }) => {
         ),
       };
 
-      socket.on("ordersQuantity", (data) => {
-        setMetric((state) => ({ ...state, amount: data }));
-      });
+      // socket.on("ordersQuantity", (data) => {
+      //   setMetric((state) => ({ ...state, amount: data }));
+      // });
 
       break;
     case "salesQuantity":
@@ -80,9 +80,9 @@ const Widget = ({ type, socket }) => {
         ),
       };
 
-      socket.on("salesQuantity", (data) => {
-        setMetric((state) => ({ ...state, amount: data }));
-      });
+      // socket.on("salesQuantity", (data) => {
+      //   setMetric((state) => ({ ...state, amount: data }));
+      // });
 
       break;
     case "profitAmount":
@@ -102,9 +102,9 @@ const Widget = ({ type, socket }) => {
         ),
       };
 
-      socket.on("profitAmount", (data) => {
-        setMetric((state) => ({ ...state, amount: data }));
-      });
+      // socket.on("profitAmount", (data) => {
+      //   setMetric((state) => ({ ...state, amount: data }));
+      // });
 
       break;
     default:
