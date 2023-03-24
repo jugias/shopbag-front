@@ -117,7 +117,7 @@ const Home = () => {
         position="bottom-right"
         reverseOrder={false}
       />
-      <div className="homeContainer">
+      {/* <div className="homeContainer">
         <div className="widgets">
           <Widget type="usersQuantity" socket={socket} />
           <Widget type="ordersQuantity" socket={socket} />
@@ -134,7 +134,7 @@ const Home = () => {
         </div>
         {/* <div className="barChar__container">
         <BarChar/>
-        </div> */}
+        </div> 
         <div className="chartsPieRdar">
           <div className="PieChart__container ">
             <PieChar socket={socket} />
@@ -148,7 +148,7 @@ const Home = () => {
           <div className="listTitle">Ultimas ordenes</div>
           <Table socket={socket} />
         </div>
-      </div>
+      </div> */}
     </div>
   );
   // >>>>>>> master
