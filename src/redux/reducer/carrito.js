@@ -16,7 +16,6 @@ const carritoSlice = createSlice({
     emptycarrito: (state) => (state = initialState),
     eraseAProduct: (state, action) => {
       let newState = state.carrito.filter((pr) => pr.title !== action.payload);
-      console.log(newState);
       state.carrito = newState;
     },
   },

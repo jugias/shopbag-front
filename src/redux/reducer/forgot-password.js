@@ -14,6 +14,7 @@ export const changePassword = createAsyncThunk(
   "forgotPassword/changePassword",
   async (payload) => {
     const response = await axios.post("api/forgotPassword", payload);
+    return response;
   }
 );
 

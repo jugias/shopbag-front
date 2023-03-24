@@ -17,14 +17,11 @@ const WishList = () => {
   const token = localStorage.getItem("userCredentials");
 
   const parseToken = JSON.parse(token);
-  console.log(parseToken);
   useEffect(() => {
     dispatch(getList(parseToken.token));
   }, [dispatch]);
   let myWishes = useSelector(allWishes);
-  console.log(myWishes);
   const handlerDelete = (id) => {
-    console.log(id);
     dispatch(deleteWish(id));
     dispatch(deleteWh(id));
   };

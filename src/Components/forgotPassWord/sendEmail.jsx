@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import { sendEmail, myData } from "../../redux/reducer/forgot-password";
 import { useDispatch, useSelector } from "react-redux";
 import swal from "sweetalert";
-import "./sendEmail.css"
+import "./sendEmail.css";
 
 export const SendEmail = () => {
   const [email, setEmail] = useState({ email: "" });
   const [error, setError] = useState({ error: "", validate: false });
-  console.log(error);
   const handleChange = (e) => {
     setEmail({ ...email, [e.target.name]: [e.target.value] });
     let emailRegex =
@@ -22,7 +21,6 @@ export const SendEmail = () => {
     }
   };
   let mydatos = useSelector(myData);
-  console.log(mydatos);
   const dispatch = useDispatch();
   const handlerSendEmail = () => {
     dispatch(sendEmail(email));

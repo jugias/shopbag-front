@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 export const ForgotPassword = () => {
   let datos = JSON.parse(localStorage.getItem("emailForRecovery"));
-  console.log(datos);
   const [form, setForm] = useState({ email: datos.email, password: "" });
   const [error, setError] = useState({ length: "", validate: false });
 
